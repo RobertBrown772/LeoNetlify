@@ -1,0 +1,38 @@
+/*==============================================================================
+// File:        Footer.scss
+// Synopsis:    Main footer - SASS
+//============================================================================*/
+
+.koda-footer{
+  background: $koda-black;
+  color: $koda-white;
+
+  @include element("inner"){
+    padding: 60px 0px;
+  }
+  @include element("title"){
+    margin-bottom: $m-sm;
+  }
+
+  @include element("link"){
+    color: $koda-white;
+  }
+
+  @include element("col-1"){}
+  @include element("col-2"){}
+  @include element("col-3"){}
+
+  @include element("copyright"){
+    padding: $p-sm 0px;
+    text-align: center;
+    color: $koda-primary;
+    user-select: none;
+    background: $koda-dark;
+    p{
+      text-transform: uppercase;
+      font-size: 12px;  
+      font-weight: 700;
+      font-family: $primary-font;
+    }
+  }
+}

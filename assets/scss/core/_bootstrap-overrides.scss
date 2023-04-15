@@ -1,0 +1,44 @@
+/*==============================================================================
+// File:        _bootstrap-main.scss
+// Synopsis:    Bootstrap main style overrides - SASS
+//============================================================================*/
+
+/*------------------------------------------------------------------------------
+// Example changing the standard spacing to 20px
+// Setting all items to maximum width of viewport variables
+//----------------------------------------------------------------------------*/
+
+.container {
+	padding-right: 20px;
+  padding-left: 20px;
+	
+	@include media-breakpoint-up(sm) {
+		max-width: calc(#{$viewport-xs} - 20px);
+	}
+
+	@include media-breakpoint-up(md) {
+		max-width: calc(#{$viewport-sm} - 20px);
+	}
+
+	@include media-breakpoint-up(lg) {
+		max-width: calc(#{$viewport-md} - 20px);
+	}
+
+	@include media-breakpoint-up(xl) {
+		max-width: calc(#{$viewport-lg} - 20px);
+	}
+	
+	@include media-breakpoint-up(xxl) {
+		max-width: calc(#{$viewport-xl} - 20px);
+	}
+}
+
+.container-fluid {
+  padding-right: 10px;
+  padding-left: 10px  
+}
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px
+}

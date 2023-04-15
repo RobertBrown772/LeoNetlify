@@ -1,0 +1,93 @@
+/*==============================================================================
+// File:        Buttons.scss
+// Synopsis:    Main button styles - SASS
+//============================================================================*/
+
+.koda-btn{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  padding: 4px 18px;
+  border-radius: 5px;
+  @include fluid-prop(font-size, $viewport-full-min, $viewport-xl, 14px, 16px);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $koda-black;
+  cursor: pointer;
+  font-family: $secondary-font;
+  border: 1px solid $koda-black;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  margin-bottom: 0px;
+
+  a, span{
+    font-weight: 700;
+    color: inherit;
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $koda-black;
+    z-index: -1;
+    transition: all 0.1s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+
+  &:hover{
+    color: $koda-white;
+    border: 1px solid black;
+    &::before{
+      transform: scaleY(1);
+    }
+  }
+
+  @include modifier("primary"){
+    background: $koda-primary;
+    border-color: $koda-primary;
+    color: $koda-white;
+  }
+
+  @include modifier("secondary"){
+    background: $koda-secondary;
+    border-color: $koda-secondary;
+    color: $koda-white;
+  }
+
+  @include modifier("tertiary"){
+    background: $koda-tertiary;
+    border-color: $koda-tertiary;
+    color: $koda-white;
+  }
+
+  @include modifier("quaternary"){
+    background: $koda-quaternary;
+    border-color: $koda-quaternary;
+    color: $koda-white;
+  }
+  @include modifier("alternate"){
+    background: $koda-alternate;
+    border-color: $koda-alternate;
+    color: $koda-black;
+  }
+
+  @include modifier("black"){
+    background: $koda-black;
+    border-color: $koda-black;
+    color: $koda-white;
+  }
+
+  @include modifier("white"){
+    background: $koda-white;
+    color: $koda-black;
+  }
+
+}

@@ -1,0 +1,43 @@
+.koda-tabs {
+  width: 100%;
+
+  @include element("bar"){
+    display: flex;
+    gap: 5px;
+  }
+
+
+  @include element("item") {
+    cursor: pointer;
+    border: 1px solid $koda-mid;
+    
+    
+    @include element("header"){
+      background: $koda-offwhite;
+      padding: $p-df;    
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      &:hover{
+        background: darken($koda-offwhite, 5%);
+      }
+    }
+    .tab-active{
+      background: darken($koda-offwhite, 20%);
+    }
+    @include element("title"){
+      user-select: none;
+      font-family: $primary-font;
+      font-size: 22px;
+    }
+  }
+  
+  @include element("content"){
+    padding: $p-df;
+    margin-top: -1px;
+    user-select: inherit;
+    border: 1px solid $koda-mid;
+    font-family: $secondary-font;
+  }
+}

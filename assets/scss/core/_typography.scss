@@ -1,0 +1,94 @@
+/*==============================================================================
+// File:        _type.scss
+// Synopsis:    Main type styling - SASS
+//============================================================================*/
+
+
+h1 {
+  @include fluid-prop(font-size, $viewport-full-min, $viewport-xl, 38px, 48px);
+  font-family: $primary-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  // font-style: italic;
+}
+
+h2 {
+  @include fluid-prop(font-size, $viewport-full-min, $viewport-xl, 32px, 42px);
+  font-weight: 400;
+  font-family: $primary-font;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include fluid-prop(font-size, $viewport-full-min, $viewport-xl, 30px, 34px);
+  font-weight: 400;
+  font-family: $primary-font;
+  text-transform: uppercase;
+}
+
+h4 {
+  @include fluid-prop(font-size, $viewport-full-min, $viewport-xl, 26px, 30px);
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+h5 {
+  @include fluid-prop(font-size, $viewport-full-min, $viewport-xl, 24px, 26px);
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+h6 {
+  @include fluid-prop(font-size, $viewport-full-min, $viewport-xl, 22px, 22px);
+  font-family: $secondary-font;
+  text-transform: uppercase;
+}
+
+p, span, a, li, ul, ol {
+  @include fluid-prop(font-size, $viewport-full-min, $viewport-xl, 13px, 16px);
+  font-family: $main-font;
+  font-weight: 300;
+  @include fluid-prop(line-height, $viewport-full-min, $viewport-xl, 1.4, 1.7);
+}
+a{
+  text-decoration: none;
+  color: $koda-primary;
+  transition: $koda-transition-cubic;
+
+  &:hover{
+    color: lighten($koda-primary, 10%);
+  }
+}
+i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*------------------------------------------------------------------------------
+// Extend heading tags
+//----------------------------------------------------------------------------*/
+
+%h1  {
+  @extend h1;
+}
+
+%h2  {
+  @extend h2;
+}
+
+%h3  {
+  @extend h3;
+}
+
+%h4  {
+  @extend h4;
+}
+
+%h5  {
+  @extend h5;
+}
+
+%h6  {
+  @extend h6;
+}

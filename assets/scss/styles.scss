@@ -1,0 +1,34 @@
+/*==============================================================================
+// File:        styles.scss
+// Synopsis:    Main Stylesheet for the Project - SASS
+//============================================================================*/
+
+// Setting the resets
+@import "core/resets";
+
+// Core Bootstrap components for BS Mixins
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/maps";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
+// Importing the Koda Core
+@import "core/variables";
+@import "core/layouts";
+@import "core/mixins";
+@import "core/utility";
+@import "core/typography";
+@import "core/bootstrap-overrides";
+@import "core/fancy";
+
+// Importing the component Core
+@import "components/navigation";
+@import "components/hero";
+@import "components/breadcrumbs";
+@import "components/footer";
+@import "components/divider";
+@import "components/buttons";
+@import "components/cards";
+@import "components/accordion";
+@import "components/tabs";
