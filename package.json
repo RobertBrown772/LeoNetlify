@@ -8,11 +8,9 @@
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
-  
   "resolutions": {
     "postcss-preset-env": "^7.0.0"
   },
-
   "dependencies": {
     "@nuxt/content": "^1.0.0",
     "@nuxtjs/markdownit": "^2.0.0",
@@ -20,10 +18,10 @@
     "axios": "^1.2.1",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
+    "nuxt-vite": "^0.3.5",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10",
-    "nuxt-vite": "^0.3.5"
+    "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
     "@nuxtjs/google-fonts": "^2.0.0",

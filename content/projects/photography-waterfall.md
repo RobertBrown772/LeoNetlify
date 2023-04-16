@@ -1,6 +1,6 @@
 ---
 title: "Photography - Dunster Castle Waterfall"
-subtitle: "A Phone Taken Image "
+subtitle: "A Phone Taken Image"
 date: "2020-01-01"
 description: "Taken at Dunster Castle, Somerset."
 image: "/images/photography-waterfall.jpg"

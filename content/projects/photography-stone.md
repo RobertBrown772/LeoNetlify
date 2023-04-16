@@ -1,6 +1,6 @@
 ---
 title: "Photography - Stone Tower"
-subtitle: "DSLR Camera Image
+subtitle: "DSLR Camera Image"
 date: "2020-01-01"
 description: "This was my first image with the DSLR Camera"
 image: "/images/photography-stone.jpg"

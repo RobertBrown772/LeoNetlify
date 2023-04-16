@@ -2,7 +2,7 @@
 title: "Photography - Boat"
 subtitle: "An image I took and edited on my IPhone"
 date: "2020-01-01"
-description: "I made and edited tis image on my IPhone"
+description: "I made and edited this image on my IPhone"
 image: "/images/photography-boat.jpg"
 ---
 
